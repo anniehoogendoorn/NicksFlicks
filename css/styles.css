@@ -1,0 +1,12 @@
+h1, h2, h3 {
+
+}
+
+#header {
+  border-bottom: 2px solid #999;
+}
+
+#header p {
+  font-weight: bold;
+  color: #999;
+}
