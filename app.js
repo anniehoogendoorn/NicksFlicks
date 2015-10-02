@@ -7,7 +7,7 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       'header': {
         templateUrl: 'partials/header.html',
       },
-      'body': {
+      'welcome': {
         templateUrl: 'partials/home.html',
       },
     }
@@ -19,24 +19,15 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       'header': {
         templateUrl: 'partials/header.html',
       },
-      'body': {
+      'reviews': {
         templateUrl: 'partials/reviews.html',
       },
+      'content': {
+        templateUrl: 'partials/content.html'
+      }
     }
   });
-
-  $stateProvider.state('reviews.content', {
-    url: "/content",
-    views: {
-      'header': {
-        templateUrl: 'partials/header.html',
-      },
-      'body': {
-        templateUrl: 'partials/content.html',
-      },
-    }
-  });
-
+  //
 
 
 

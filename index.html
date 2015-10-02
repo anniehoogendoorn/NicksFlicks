@@ -13,8 +13,24 @@
 </head>
 <body>
   <div class="container">
-    <div ui-view="header"></div>
-    <div ui-view="body"></div>
+    <div class="row" id="header">
+      <div class="col-md-12">
+        <div ui-view="header"></div>
+      </div>
+    </div>
+    <div class="row" id="welcome">
+      <div class="col-md-12>"
+        <div ui-view="welcome"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4" id="reviews">
+        <div ui-view="reviews"></div>
+      </div>
+      <div class="col-md-8" id="content">
+        <div ui-view="content"></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
