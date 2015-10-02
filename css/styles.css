@@ -2,6 +2,8 @@ h1, h2, h3 {
 
 }
 
+/* HEADER */
+
 #header {
   border-bottom: 2px solid #999;
 }
@@ -9,4 +11,11 @@ h1, h2, h3 {
 #header p {
   font-weight: bold;
   color: #999;
+}
+
+/* HOME */
+
+#home {
+  margin: 0 auto;
+  float: none;
 }
