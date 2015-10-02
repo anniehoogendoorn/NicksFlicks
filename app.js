@@ -13,5 +13,31 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
     }
   });
 
+  $stateProvider.state('reviews', {
+    url: "/reviews",
+    views: {
+      'header': {
+        templateUrl: 'partials/header.html',
+      },
+      'body': {
+        templateUrl: 'partials/reviews.html',
+      },
+    }
+  });
+
+  $stateProvider.state('reviews.content', {
+    url: "/content",
+    views: {
+      'header': {
+        templateUrl: 'partials/header.html',
+      },
+      'body': {
+        templateUrl: 'partials/content.html',
+      },
+    }
+  });
+
+
+
 
 });
