@@ -6,34 +6,37 @@
   <script src="lib/angular.js"></script>
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
-  <script src="controllers/ReviewsController.js"></script>
-  <!-- <script src="controllers/ReviewtextController.js"></script> -->
-  <script src="services/ReviewsFactory.js"></script>
   <script src="services/UtilitiesFactory.js"></script>
+  <script src="services/ReviewsFactory.js"></script>
+  <script src="controllers/ReviewsController.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
 
 </head>
 <body>
   <div class="container">
-    <div class="row" id="header">
-      <div class="col-md-12">
+    <div class="row" >
+      <div class="col-xs-12">
         <div ui-view="header"></div>
       </div>
     </div>
-    <div class="row" id="welcome">
-      <div class="col-md-12>"
+
+    <div class="row">
+      <div class="cols-xs-12">
         <div ui-view="welcome"></div>
       </div>
     </div>
+
+
     <div class="row">
-      <div class="col-md-4" id="reviews">
-        <div ui-view="reviews"></div>
-      </div>
-      <div class="col-md-8" id="content">
-        <div ui-view="content"></div>
-      </div>
-    </div>
+            <div class="col-xs-4">
+                <div ui-view="reviews"></div>
+            </div>
+            <div class="col-xs-8">
+                <div ui-view="reviewtext"></div>
+            </div>
+        </div>
+
   </div>
 </body>
 </html>
