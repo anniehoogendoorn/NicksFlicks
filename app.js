@@ -21,16 +21,12 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       },
       'reviews': {
         templateUrl: 'partials/reviews.html',
-        controller: 'ReviewsCtrl'
+        // controller: 'ReviewsCtrl'
       },
       'reviewtext': {
         templateUrl: 'partials/reviewtext.html'
-        controller: 'ReviewtextCtrl'
+        // controller: 'ReviewsCtrl'
       }
     }
   });
-  //
-
-
-
 });
