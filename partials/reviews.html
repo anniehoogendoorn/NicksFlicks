@@ -1,2 +1,2 @@
 <p ng-repeat="item in reviews">
-<a ui-sref="reviews.content">{{ item.name }}</a></p>
+<a ui-sref="reviews.content({ reviewId: item.id })">Reviews{{ item.name }}</a></p>

@@ -21,9 +21,11 @@ nicksFlicks.config(function($stateProvider, $urlRouterProvider) {
       },
       'reviews': {
         templateUrl: 'partials/reviews.html',
+        controller: 'ReviewsCtrl'
       },
-      'content': {
-        templateUrl: 'partials/content.html'
+      'reviewtext': {
+        templateUrl: 'partials/reviewtext.html'
+        controller: 'ReviewtextCtrl'
       }
     }
   });
