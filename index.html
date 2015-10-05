@@ -10,32 +10,37 @@
   <script src="services/ReviewsFactory.js"></script>
   <script src="controllers/ReviewsController.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
   <div class="container">
     <div class="row" >
-      <div class="col-xs-12">
-        <div ui-view="header"></div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="cols-xs-12">
-        <div ui-view="welcome"></div>
-      </div>
-    </div>
-
-
-    <div class="row">
-            <div class="col-xs-4">
-                <div ui-view="reviews"></div>
-            </div>
-            <div class="col-xs-8">
-                <div ui-view="reviewtext"></div>
-            </div>
+      <div class="col-md-12">
+        <div id="header">
+          <div ui-view="header"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cols-md-12">
+        <div id="welcome">
+          <div ui-view="welcome"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-4">
+          <div ui-view="reviews"></div>
+      </div>
+      <div class="col-md-8">
+          <div ui-view="reviewtext"></div>
+          <div ui-view="reviewform"></div>
+      </div>
+    </div>
 
   </div>
 </body>

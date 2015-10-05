@@ -1,20 +1,16 @@
-h1, h2, h3 {
-
-}
-
 /* HEADER */
 
 #header {
-  border-bottom: 2px solid #999;
+  border-bottom: 2px solid #aaa;
 }
 
-header h1 {
-  font-size: 2.8em;
+#header h1 {
+  font-size: 2.4em;
 }
 
-header p {
+#header p {
   font-weight: bold;
-  color: #999;
+  color: #aaa;
 }
 
 /* WELCOME */
